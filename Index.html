@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulatorku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <form class="display">
+            <input id="screen" placeholder="0" disabled>
+        </form>
+        <section class="button">
+            <div class="tombol-kiri">
+                <button class="tombol" onclick="clearScreen()">AC</button>
+                <button class="tombol" onclick="deleteLast()">Del</button>
+                <button class="tombol" onclick="display('%')">%</button>                
+                <!-- Mengubah urutan tombol angka agar sesuai dengan tata letak kalkulator
+                  tombol bawah 3 -->
+                <button class="tombol" onclick="display('7')">7</button>
+                <button class="tombol" onclick="display('8')">8</button>
+                <button class="tombol" onclick="display('9')">9</button>
+                <!--tombol bawah 3-->
+                <button class="tombol" onclick="display('4')">4</button>
+                <button class="tombol" onclick="display('5')">5</button>
+                <button class="tombol" onclick="display('6')">6</button>
+                <!--tombol bawah 2-->
+                <button class="tombol" onclick="display('1')">1</button>
+                <button class="tombol" onclick="display('2')">2</button>
+                <button class="tombol" onclick="display('3')">3</button>
+                <!--tombol bawah 1-->
+                <button class="tombol" onclick="display('^')">^</button>
+                <button class="tombol" onclick="display('0')">0</button>
+                <button class="tombol" onclick="display('.')">.</button>
+            </div>
+            <div class="tombol-kanan">
+                <button class="tombol" onclick="display('/')">/</button>
+                <button class="tombol" onclick="display('*')">x</button>
+                <button class="tombol" onclick="display('-')">-</button>
+                <button class="tombol" onclick="display('+')">+</button>
+                <button class="tombol" onclick="calculate()">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
